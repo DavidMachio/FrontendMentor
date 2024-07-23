@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+h2,
+h1 {
+  font-family: "Young Serif", serif;
+}
+h2 {
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 10px;
+}
+p,
+li {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Stone900);
+}
+p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  width: 750px;
+  margin: 200px 0;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 40px;
+    margin-right: 40px;
+}
+img {
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  align-self: center;
+  margin-top: 30px;
+}
+section {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.preparation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 30px;
+  border-radius: 10px;
+}
+.preparation h3 {
+  font-size: 20px;
+  color: hsl(332, 51%, 32%);
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 25px;
+}
+span {
+  font-weight: 600;
+}
+li {
+  padding-left: 15px;
+}
+.ingredients {
+  border-bottom: 1px solid var(--Stone600);
+  padding-bottom: 30px;
+}
+.instructions {
+  border-bottom: 1px solid var(--Stone600);
+  padding-bottom: 30px;
+}
+.instructions li {
+  list-style: decimal;
+}
+
+main div {
+    display: flex;
+    align-items: last baseline;
+    padding: 20px;
+    border-bottom: 1px solid var(--Stone600);
+}
+.nutrition div:last-child{
+    border: none;
+    margin-bottom: 20px;
+}
+main div h3, h4{
+    width: 100%;
+}
+h3 {
+    font-weight: 400;
+}
+h4 {
+    color: hsl(14, 45%, 36%);
+}
+
+    .attribution { 
+        font-size: 11px;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        
+
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
+        
+
+
+@media (max-width:800px){
+    main{
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .attribution{
+        background-color: hsl(0, 0%, 100%);
+    }
+}
