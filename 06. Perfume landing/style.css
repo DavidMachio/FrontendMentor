@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root{
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+}
+
+main{
+    display: flex;
+    height: 550px;
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.perfume{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--White);
+    padding: 30px;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+h2{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 5px;
+}
+h1{
+    font-size: 40px;
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        width: 250px;
+
+}
+p{
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    width: 220px;
+    
+}
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.discount {
+    font-size: 40px;
+    font-family: "Fraunces", serif;
+    color: var(--Dark-cyan);
+
+}
+.price {
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    font-weight: 500;
+}
+button {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+}
+button:active{
+    background-color: var(--Very-dark-blue);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 720px) {
+    main{
+        flex-direction: column;
+        width: 350px;
+        height: auto;
+    }
+    .perfume{
+        width: 100%;
+        height: 300px;
+    }
+    section{
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+    p {
+        width: 100%;
+    }
+}
