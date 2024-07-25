@@ -95,6 +95,7 @@ p{
 .negro {
   background-color: var(--Very-dark-blackish-blue);
   grid-column: span 2;
+  z-index: 200;
 }
 .title {
     color: var(--White);
